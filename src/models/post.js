@@ -46,7 +46,7 @@ Post.belongsTo(User, { foreignKey: 'userId' });
 
 Post.sync()
   .then(() => {
-    console.log('User table has been successfully created, if one did not exist')
+    console.log('User table has been successfully created, if not exist')
   })
   .catch(error => {
     console.log('This error occured', error)
